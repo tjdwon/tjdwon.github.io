@@ -96,18 +96,12 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   padding: 72px 0 56px;
 }
 .avatar {
-  width: 88px;
-  height: 88px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
-  background: var(--accent);
-  color: #fff;
-  font-family: "Newsreader", Georgia, serif;
-  font-size: 32px;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  display: block;
   margin-bottom: 24px;
 }
 .eyebrow {
