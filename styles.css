@@ -91,10 +91,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
 /* Hero */
 .hero {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 40px;
-  align-items: center;
   padding: 72px 0 56px;
 }
 .eyebrow {
@@ -125,6 +121,7 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   max-width: 46ch;
 }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.lede { max-width: 56ch; }
 
 .btn {
   display: inline-block;
@@ -140,17 +137,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .btn-primary:hover { background: #1b3c75; }
 .btn-ghost { border-color: var(--line); color: var(--ink); }
 .btn-ghost:hover { border-color: var(--muted); }
-
-.hero-photo { margin: 0; }
-.hero-photo img {
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid var(--line);
-  display: block;
-}
 
 /* Prose */
 .prose p { margin: 0 0 16px; color: var(--ink-soft); }
@@ -244,11 +230,8 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 /* Responsive */
 @media (max-width: 680px) {
   .hero {
-    grid-template-columns: 1fr;
     padding: 48px 0 40px;
-    text-align: left;
   }
-  .hero-photo { order: -1; max-width: 200px; }
   .hero h1 { font-size: 38px; }
   .interest-grid { grid-template-columns: 1fr; }
   .nav-links { gap: 16px; }
