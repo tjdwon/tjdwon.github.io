@@ -156,6 +156,24 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 .prose p { margin: 0 0 16px; color: var(--ink-soft); }
 .prose strong { color: var(--ink); font-weight: 600; }
 
+/* About — labeled list */
+.about-list { list-style: none; margin: 0 0 20px; padding: 0; }
+.about-list li {
+  display: flex;
+  gap: 12px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+}
+.about-list li:last-child { border-bottom: none; }
+.about-label {
+  flex: 0 0 180px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 /* Research interest grid */
 .interest-grid {
   list-style: none;
@@ -234,4 +252,6 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
   .hero h1 { font-size: 38px; }
   .interest-grid { grid-template-columns: 1fr; }
   .nav-links { gap: 16px; }
+  .about-list li { flex-direction: column; gap: 2px; }
+  .about-label { flex-basis: auto; }
 }
